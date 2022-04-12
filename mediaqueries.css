@@ -1,0 +1,120 @@
+
+@media (min-width: 87em) {
+    .hero-section {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 47%;
+    }
+
+    .meals {
+        padding-top: 0px !important;
+    }
+}
+/* Portal Tablet 940/16 = 58.75 */
+@media (max-width: 940px) {
+    .container {
+        width: 90%;
+    }
+
+    .grid {
+        row-gap: 4.8rem;
+        column-gap: 3.2rem;
+    }
+
+    .testimonials-gallery .container.grid {
+        align-items: center;
+    }
+
+    .gallery {
+        row-gap: 1.8rem;
+        column-gap: 1.8rem;
+    }
+
+    .meals-body.grid {
+        column-gap: 1.8rem;
+    }
+
+    .customers {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 730px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 4.8rem;
+    }
+
+    .costumers {
+        justify-content: center;
+        margin-top: 3.2rem !important;
+    }
+
+    .hero-image img {
+        max-width: 70%;
+    }
+
+    .fi-image {
+        height: 2.4rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .pb-lg {
+        padding-bottom: 8rem !important;
+    }
+
+    .pt-lg {
+        padding-top: 8rem !important;
+    }
+
+    .grid {
+        row-gap: 3.2rem;
+        align-items: center;
+    }
+
+    
+
+    .grid-3 {
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 6.4rem;
+    }
+
+    .gallery.grid-3 {
+        row-gap: 1.3rem;
+    }
+    .meals-diet {
+        grid-column: 1/-1;
+    }
+
+    .meals-body {
+        margin-bottom: 4.8rem;
+    }
+
+    .pricing-footer {
+        margin: 4.8rem 0 0rem 0;
+    }
+
+    .cta {
+        margin-bottom: 8rem;
+    }
+
+    .footer {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+}

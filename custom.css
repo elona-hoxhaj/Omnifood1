@@ -1,0 +1,699 @@
+/* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.2rem 4.8rem;
+    background-color: #fdf2e9;
+  }
+  
+  .logo img {
+    width: 12.8rem;
+  }
+  
+  .nav-bar .nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  
+  .menu {
+    margin-right: 1.6rem;
+  }
+  
+  .menu:link,
+  .menu:visited {
+    text-decoration: none;
+    color: #333;
+    transition: all 1s;
+  }
+  
+  .menu:hover,
+  .menu:active {
+    text-decoration: none;
+    color: #cf711f;
+    border-bottom: 3px solid currentColor;
+  }
+  
+  /* HEADER END*/
+  
+  /* ----HERO Start */
+  
+  .hero-section {
+    background-color: #fdf2e9;
+    padding: 0 3.2rem;
+  }
+  
+  .hero {
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 9.6rem;
+    column-gap: 8rem;
+    align-items: center;
+  }
+  
+  .hero-heading-description {
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+    margin-bottom: 4.8rem;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+  }
+  
+  /* ----HERO End */
+  
+  /* Customers */
+  
+  .costumers {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  
+  .costumer-img img {
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    margin-left: -1.6rem;
+    border: 3px solid #fdf2e9;
+  }
+  
+  .costumer-img img:last-child {
+    margin-right: 0px;
+  }
+  
+  .costumer-desc {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  
+  .delivered {
+    color: #cf711f;
+  }
+  
+  /* ----Steps start */
+  
+  .steps {
+    padding: 0 4.8rem;
+  }
+  
+  .steps-header {
+    padding: 9.6rem 0 6.4rem 0;
+  }
+  
+  .steps-header-description {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #cf711f;
+  }
+  
+  /* .steps-content {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 6.4rem;
+      column-gap: 4.8rem;
+  } */
+  
+  .steps-content img {
+    width: 35%;
+  }
+  
+  .step-no {
+    font-size: 6.2rem;
+    font-weight: 700;
+    color: #ddd;
+  }
+  
+  .step-description {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 1.05px;
+  }
+  
+  .step-title {
+    margin-bottom: 3.2rem;
+  }
+  
+  .step-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .step-img::before,
+  .step-img::after {
+    content: "";
+    display: block;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  .step-img::before {
+    width: 60%;
+    padding-bottom: 60%;
+    z-index: -2;
+    background-color: #fdf2e9;
+  }
+  
+  .step-img::after {
+    width: 50%;
+    padding-bottom: 50%;
+    z-index: -1;
+    background-color: #fae5d3;
+  }
+  
+  /* ----Steps End */
+  
+  /* ----Feature-in start */
+  
+  .feature-in-header {
+    text-align: center;
+  }
+  
+  .feature-in-header .steps-header-description {
+    display: block;
+    color: #999;
+    margin-bottom: 3.2rem;
+  }
+  
+  .feature-in-images {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .fi-image {
+    height: 3.2rem;
+    filter: brightness(1%);
+    opacity: 50%;
+  }
+  
+  /* ----Feature-in End */
+  
+  /* ----Testimonials Start */
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 4.8rem;
+    column-gap: 3.2rem;
+  }
+  
+  .testimonial-gallery {
+    background-color: #fdf2e9;
+  }
+  
+  .testimonials-header {
+    padding-bottom: 3.2rem;
+  }
+  
+  .author-img img {
+    max-width: 20%;
+    border-radius: 50%;
+  }
+  
+  .author-testimonial {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 1.2;
+  }
+  
+  .author-info {
+    font-size: 1.4rem;
+    color: #999;
+  }
+  
+  .testimonials-body figure {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  
+  /* Gallery Start */
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3.2rem;
+    column-gap: 2.4rem;
+  }
+  
+  .container-img {
+    overflow: hidden;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s;
+  }
+  
+  .container-img img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Gallery End */
+  
+  /* ----Testimonials End */
+  
+  /* ----Meals Start */
+  
+  .meals-header {
+    margin-bottom: 8rem;
+  }
+  
+  .meals-header,
+  .meals-footer {
+    text-align: center;
+  }
+  
+  .meals-body {
+    margin-bottom: 8rem;
+  }
+  
+  .meals-recipe {
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 70%;
+    box-shadow: 0 0 3px rgba(51, 51, 51, 0.3);
+  
+    transition: all 0.4s;
+    transition-timing-function: ease;
+  }
+  
+  .meals-recipe .first {
+    justify-self: end;
+  }
+  
+  .meals-recipes {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #e67e22;
+    letter-spacing: 1.05px;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    font-weight: 500;
+    padding: 0.4rem;
+  }
+  
+  .meals-recipe:hover {
+    transform: translateY(-2rem);
+  }
+  
+  .meals-recipes:hover {
+    border-bottom: 1px solid transparent;
+  }
+  
+  .meals-header span {
+    display: block;
+    margin-bottom: 2.4rem;
+  }
+  
+  .labels {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .labels span {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5rem;
+  }
+  
+  .vegetarian {
+    background-color: #51cf66;
+    color: #333;
+  }
+  
+  .vegan {
+    background-color: #94d828;
+  }
+  
+  .paleo {
+    background-color: #fcc419;
+  }
+  
+  .meals-content {
+    padding: 1.6rem 1.2rem;
+  }
+  
+  .meals-content .ternary-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .meals-img img {
+    width: 100%;
+  }
+  
+  .meal-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  
+  .meal-details p,
+  .meals-diet p {
+    font-size: 1.8rem;
+  
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .meals-diet div {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  
+  ion-icon {
+    color: #cf711f;
+  }
+  
+  /* ----Meals End */
+  
+  /* ----Pricing & Features Start */
+  
+  /* ----Pricing  Start */
+  
+  .pricing-header {
+    margin-bottom: 6.4rem;
+  }
+  
+  .pricing-header .steps-header-description {
+    display: inline-block;
+    margin-bottom: 2.4rem;
+  }
+  
+  .pricing-card {
+    border: 2px solid #fdf2e9;
+    border-radius: 8px;
+    padding: 6.4rem 4.8rem;
+    position: relative;
+  }
+  
+  .pricing-card:last-child {
+    background-color: #fdf2e9;
+    overflow: hidden;
+  }
+  
+  .pricing-card:last-child::after {
+    content: "Best Value";
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: -5rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: #fcc419;
+    transform: rotate(45deg);
+    width: 150px;
+  }
+  
+  .pricing-card:last-child {
+    background-color: #fdf2e9;
+  }
+  
+  .pricing-body {
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem;
+  }
+  
+  .pricing-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.8rem;
+    margin-bottom: 4.8rem;
+    /* letter-spacing: 0.9px; */
+  }
+  
+  .pricing-card-body {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 3.2rem;
+  }
+  
+  .pricing-card-body ion-icon {
+    font-size: 2.4rem;
+  }
+  
+  .pricing-card .steps-header-description {
+    font-weight: 500;
+    font-size: 1.4rem;
+    /* letter-spacing: 1px; */
+    margin-bottom: 0.8rem;
+  }
+  
+  .pricing-card .price {
+    font-size: 5.2rem;
+    font-weight: 600;
+  }
+  
+  .price span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 0.6rem;
+  }
+  
+  .pricing-card-body p {
+    display: flex;
+    align-items: stretch;
+    gap: 1.2rem;
+    /* letter-spacing: 0.9px; */
+  }
+  
+  .pricing-card-footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pricing-footer {
+    display: flex;
+    justify-content: center;
+  
+    font-size: 1.8rem;
+    margin: 4.8rem 0rem 6.4rem 0rem;
+  }
+  
+  /* ----Pricing End */
+  
+  /* ----Features  Start */
+  
+  .features {
+    display: flex;
+    gap: 3.2rem;
+  
+    padding: 4.8rem;
+  }
+  
+  .features ion-icon {
+    font-size: 3.6rem;
+    background-color: #fdf2e9;
+    padding: 1.6rem;
+    border-radius: 50%;
+    margin-bottom: 4.8rem;
+  }
+  
+  .features h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  
+  .features p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  
+  /* ----Features End */
+  
+  /* ----Pricing & Features End */
+  
+  /* ----CTA Start */
+  
+  .cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: #45260a;
+    border-radius: 12px;
+    overflow: hidden;
+  
+    font-size: 1.8rem;
+    background-image: linear-gradient(to bottom right, #e67e22, #eb984e);
+    margin-bottom: 9.6rem;
+  }
+  
+  .cta-form {
+    padding: 4.8rem;
+  }
+  
+  .cta-form h2 {
+    margin-bottom: 3.2rem;
+  }
+  
+  .cta-form p {
+    line-height: 1.8;
+  }
+  
+  .form {
+    margin-top: 4.8rem;
+  }
+  
+  .form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.4rem;
+    column-gap: 3.6rem;
+  }
+  
+  .form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+  }
+  
+  .form-control input,
+  .form-control select {
+    border: none;
+    background-color: #fdf2e9;
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 8px;
+  }
+  
+  .form-control:last-child {
+    align-self: end;
+  }
+  
+  form .btn.btn-custom {
+    padding: 1rem 3.2rem;
+    width: 100%;
+    background-color: #45260a;
+    color: white;
+    transition: all 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #5c320e;
+  }
+  
+  .cta-img {
+    background-image: url(../OmniFoods/07-Omnifood/content/img/eating.jpg);
+    opacity: 0.6;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* ----CTA End */
+  
+  /* ----Footer Start */
+  
+  .footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid rgba(51, 51, 51, 0.1);
+  }
+
+  .container {
+      padding: 0 6rem;
+  }
+  
+  .logo-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-footer img {
+    width: 70%;
+    height: 2rem;
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+  
+  .social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+  
+  li {
+    display: list-item;
+  }
+  
+  .footer-link:link,
+  .footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+  }
+  
+  .social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #767676;
+    visibility: inherit;
+  }
+  
+  .copyright {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: 8rem;
+  }
+  
+  .heading-footer {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4rem;
+  }
+  
+  .contacts {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  
+  .address {
+    margin-bottom: 2.4rem;
+    color: #333;
+  }
+  
+  .nav-footer {
+    display: block;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  
+  /* ----Footer End */
