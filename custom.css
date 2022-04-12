@@ -38,6 +38,23 @@
     color: #cf711f;
     border-bottom: 3px solid currentColor;
   }
+
+  .mobile-nav {
+    border: none;
+    padding: 1.6rem;
+    background-color: transparent;
+  }
+
+  .mobile-nav
+  .mobile-nav-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #333;
+  }
+
+  .mobile-nav-icon[name = close-outline ] {
+    display: none;
+  }
   
   /* HEADER END*/
   
@@ -605,7 +622,7 @@
   }
   
   .cta-img {
-    background-image: url(../OmniFoods/07-Omnifood/content/img/eating.jpg);
+    background-image: url(./07-Omnifood/content/img/eating.jpg);
     opacity: 0.6;
     background-size: cover;
     background-position: center;
