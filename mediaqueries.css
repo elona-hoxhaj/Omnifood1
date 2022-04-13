@@ -10,6 +10,10 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .mobile-nav {
+        display: none;
+    }
 }
 
 @media (max-width: 75em) {
@@ -20,6 +24,7 @@
     .meals {
         padding-top: 0px !important;
     }
+
 }
 /* Portal Tablet 940/16 = 58.75 */
 @media (max-width: 59em) {
@@ -48,6 +53,74 @@
     .customers {
         gap: 5px;
     }
+
+    .header {
+        position: relative;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .nav-bar {
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.93);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all 0.3s ease-in;
+
+        /* 1. Opacity */
+        opacity: 0;
+
+         /* 2. Mouse and keyboard events to none */
+        pointer-events: none;
+
+         /* 3. Hide element from screen reader */
+
+         visibility: hidden;
+         z-index: 10;
+    }
+
+    .nav-bar .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.4rem;
+        gap: 3.2rem;
+    }
+
+    .open-nav .nav-bar {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .open-nav button {
+        z-index: 99999;
+    }
+
+    .open-nav ion-icon[name = "close-outline"] {
+       display: block;
+       z-index: 99999;
+    }
+
+    .open-nav ion-icon[name = "menu-outline"] {
+        display: none;
+        z-index: 99999;
+     }
+
+     .open-nav button {
+         position: fixed;
+         right: 0;
+         font-size: inherit;
+     }
 }
 
 @media (max-width: 46em) {

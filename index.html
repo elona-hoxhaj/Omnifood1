@@ -16,25 +16,27 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="07-Omnifood/content/img/omnifood-logo.png" alt="OmniFood Logo" />
+  <header id="header" class="open-nav">
+    <div class="header">
+      <div class="logo">
+        <img src="07-Omnifood/content/img/omnifood-logo.png" alt="OmniFood Logo" />
+      </div>
+      <div class="nav-bar">
+        <ul class="nav">
+          <li><a class="menu" href="#steps">How it works</a></li>
+          <li><a class="menu" href="#meals">Meals</a></li>
+          <li><a class="menu" href="#testimonials">Testimonials</a></li>
+          <li><a class="menu" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="menu tryfree-btn" href="#cta" style="color: white">Try for free</a>
+          </li>
+        </ul>
+      </div>
+      <button class="mobile-nav">
+        <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+      </button>
     </div>
-    <div class="nav-bar">
-      <ul class="nav">
-        <li><a class="menu" href="#">How it works</a></li>
-        <li><a class="menu" href="#">Meals</a></li>
-        <li><a class="menu" href="#">Testimonials</a></li>
-        <li><a class="menu" href="#">Pricing</a></li>
-        <li>
-          <a class="menu tryfree-btn" href="#" style="color: white">Try for free</a>
-        </li>
-      </ul>
-    </div>
-    <button class="mobile-nav">
-      <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
-      <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
-    </button>
   </header>
   <main>
     <section class="hero-section pb-lg">
@@ -49,7 +51,7 @@
             nutritional needs.
           </p>
           <a class="btn btn-primary mr-sm" href="#">Start eating well</a>
-          <a class="btn btn-secondary" href="#">Learn more &darr;</a>
+          <a class="btn btn-secondary" href="#steps">Learn more &darr;</a>
           <div class="costumers mt-lg">
             <div class="costumer-img">
               <img src="07-Omnifood/content/img/customers/ben.jpg" alt="Ben" />
@@ -87,7 +89,7 @@
       </div>
     </section>
 
-    <section class="steps pb-lg">
+    <section id="steps" class="steps pb-lg">
       <div class="steps-header">
         <span class="steps-header-description">How OmniFood works</span>
         <h2 class="secondary-heading">
@@ -152,7 +154,7 @@
       </div>
     </section>
 
-    <section class="meals container pt-lg pb-lg">
+    <section id="meals" class="meals container pt-lg pb-lg">
       <div class="meals-header">
         <span class="steps-header-description">Meals</span>
         <h2 class="secondary-heading">
@@ -259,7 +261,7 @@
       </div>
     </section>
 
-    <section class="testimonial-gallery">
+    <section id="testimonials" class="testimonial-gallery">
       <div class="container grid grid-2 pb-lg pt-lg">
         <div class="testimonials">
           <div class="testimonials-header">
@@ -366,7 +368,7 @@
       </div>
     </section>
 
-    <section class="pricing-features pt-lg pb-lg container">
+    <section id="pricing" class="pricing-features pt-lg pb-lg container">
       <div class="pricing">
         <div class="pricing-header">
           <span class="steps-header-description">Pricing</span>
@@ -470,7 +472,7 @@
       </div>
     </section>
 
-    <section class="cta container">
+    <section id="cta" class="cta container">
       <div class="cta-form">
         <h2 class="secondary-heading">Get your first meal for free!</h2>
         <p>
@@ -511,6 +513,12 @@
   </main>
 
   <footer class="footer pt-lg">
+    <div class="move-up">
+      <a href="#header">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </a>
+
+    </div>
     <div class="container grid grid-5 grid--footer">
       <div class="logo-footer">
         <a class="footer-logo" href="#">
