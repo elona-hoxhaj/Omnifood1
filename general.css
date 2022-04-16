@@ -87,10 +87,16 @@ strong {
     border-radius: 8px;
     transition: all 0.3s;
 }
+
+.btn-click {
+    transform: rotate(360deg);
+}
+
 .btn-lg {
     font-size: 1.8rem;
     padding: 1.6rem 3.2rem;
 }
+
 .btn-primary {
 
     background-color: #e67e22;
